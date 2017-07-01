@@ -9,3 +9,12 @@ corte <- function(modelo, corte = 50) {
 }
 corte(cl.mod)
 corte(an.mod)
+
+cl +
+  geom_hline(yintercept = 50, col = "red") +
+  geom_vline(xintercept = corte(cl.mod), linetype = "dashed")
+ggsave("figuras/cl-corte.png")
+an +
+  geom_hline(yintercept = 50, col = "red") +
+  geom_vline(xintercept = corte(an.mod), linetype = "dashed")
+ggsave("figuras/an-corte.png")
