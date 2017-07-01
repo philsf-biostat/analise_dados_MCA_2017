@@ -14,3 +14,13 @@ an <- ggplot(anis, aes(concentracao, IV)) +
   labs(title = "Anis") +
   xlab("Concentração (µg/ml)") +
   ylab("Inibição viral (%)")
+
+cl
+ggsave("figuras/cl.png")
+an
+ggsave("figuras/an.png")
+
+cl + scale_x_log10()
+ggsave("figuras/cl-log.png")
+an + scale_x_log10()
+ggsave("figuras/an-log.png")
