@@ -4,9 +4,9 @@
 ## Figuras
 
 - Capim-limão
-    - [escala normal](figuras/cl.png)
-    - [escala log](figuras/cl-log.png)
+    - [escala normal](figuras/cl.png?raw=true)
+    - [escala log](figuras/cl-log.png?raw=true)
 - Anis
-    - [escala normal](figuras/an.png)
-    - [escala log](figuras/an-log.png)
+    - [escala normal](figuras/an.png?raw=true)
+    - [escala log](figuras/an-log.png?raw=true)
 
