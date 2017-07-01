@@ -12,9 +12,11 @@ corte(an.mod)
 
 cl +
   geom_hline(yintercept = 50, col = "red") +
-  geom_vline(xintercept = corte(cl.mod), linetype = "dashed")
+  geom_vline(xintercept = corte(cl.mod), linetype = "dashed") +
+  stat_poly_eq(formula = y ~ x, aes(label=..eq.label..), parse = TRUE, col = "blue")
 ggsave("figuras/cl-corte.png")
 an +
   geom_hline(yintercept = 50, col = "red") +
-  geom_vline(xintercept = corte(an.mod), linetype = "dashed")
+  geom_vline(xintercept = corte(an.mod), linetype = "dashed") +
+  stat_poly_eq(formula = y ~ x, aes(label=..eq.label..), parse = TRUE, col = "blue")
 ggsave("figuras/an-corte.png")
